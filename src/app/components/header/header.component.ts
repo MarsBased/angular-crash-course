@@ -11,7 +11,7 @@ export class HeaderComponent {
 
   constructor() {
     this.today = new Date();
-    this.subtitle = '';
+    this.subtitle = 'Todo List';
   }
 
   get formattedDate(): string {

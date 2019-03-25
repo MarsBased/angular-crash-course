@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'todo-list';
+  inputValue = 'Initial value';
+
+  onEditInput(newInputValue: string): void {
+    this.inputValue = newInputValue;
+  }
 }

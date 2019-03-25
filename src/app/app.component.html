@@ -1,4 +1,9 @@
 <div class="root">
   <app-header></app-header>
+  <app-add-todo></app-add-todo>
   <app-todo></app-todo>
+
+  <app-input [data]="inputValue" (editInput)="onEditInput($event)"></app-input>
+
+  <p>Input value: {{ inputValue }}</p>
 </div>
