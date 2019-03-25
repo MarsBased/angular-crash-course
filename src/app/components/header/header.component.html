@@ -1,1 +1,8 @@
 <h1>Todos</h1>
+
+<div class="subtitle">
+  <h2 [title]="subtitle">{{ subtitle }}</h2>
+  <span>{{ formattedDate }}</span>
+</div>
+
+<input [(ngModel)]="subtitle" />

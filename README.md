@@ -18,6 +18,14 @@ Create a new project using the Angular CLI. Serve the application.
 
 Create a new Todo Component.
 
+### 3-modules-components
+
+Create a new AddTodo Component that contains:
+
+- Input element
+- Button 'Add'
+- Text that clones what we are writing
+
 ### Brought you by
 
 [![marsbased](https://marsbased.com/assets/marsbased-readme.svg)](https://marsbased.com)
