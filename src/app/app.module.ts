@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { TodoComponent } from './components/todo/todo.component';
 import { AddTodoComponent } from './components/add-todo/add-todo.component';
-import { InputComponent } from './components/input/input.component';
+import { TodoListComponent } from './components/todo-list/todo-list.component';
+import { ColorDirective } from './directives/color.directive';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { InputComponent } from './components/input/input.component';
     HeaderComponent,
     TodoComponent,
     AddTodoComponent,
-    InputComponent
+    TodoListComponent,
+    ColorDirective
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-add-todo',
@@ -6,9 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./add-todo.component.scss']
 })
 export class AddTodoComponent {
-  newTodo: string;
+  @Output()
+  addTodo = new EventEmitter<string>();
 
-  addTodo(): void {
-    alert(this.newTodo);
+  newTodo = '';
+
+  add(): void {
+    this.addTodo.emit(this.newTodo);
   }
 }

@@ -11,6 +11,7 @@ Each branch introduce you to a different topic.
 - `2-modules-components`. Create a new component.
 - `3-modules-components`. Data binding.
 - `4-modules-components`. Input and Output
+- `5-directives`. Directives
 
 ### 1-angular-cli - Angular CLI
 
@@ -35,6 +36,10 @@ Create a new AddTodo Component that contains:
 - Move AddTodo inside TodoList
 - AddTodo emits an event (Output) with the input value when the user clicks the ‘Add’ button.
 - We send the new value to the Todo component.
+
+### 5-directives
+
+- Add a new directive, show an alert when an element is clicked.
 
 ### Brought you by
 
