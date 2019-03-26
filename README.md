@@ -67,6 +67,10 @@ Create a new AddTodo Component that contains:
 - Inject HTTP Service
 - Retrieve the list of posts from jsonplaceholder.typicode.com
 
+### 10-forms
+
+- Create a new Signup component with form
+
 ### Brought you by
 
 [![marsbased](https://marsbased.com/assets/marsbased-readme.svg)](https://marsbased.com)

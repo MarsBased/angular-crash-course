@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -13,6 +13,10 @@ import { CustomDateFormatPipe } from './pipes/date.pipe';
 import { SortPipe } from './pipes/sort.pipe';
 import { UsersService } from './services/users.service';
 import { TodosService } from './services/todos.service';
+import { LoginComponent } from './components/login/login.component';
+import { PostsService } from './services/posts.service';
+import { PostListComponent } from './components/post-list/post-list.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,6 +26,8 @@ import { TodosService } from './services/todos.service';
     TodoComponent,
     AddTodoComponent,
     TodoListComponent,
+    LoginComponent,
+    PostListComponent,
 
     // Directives
     ColorDirective,
@@ -31,8 +37,8 @@ import { TodosService } from './services/todos.service';
     CustomDateFormatPipe,
     SortPipe
   ],
-  imports: [BrowserModule, FormsModule],
-  providers: [UsersService, TodosService],
+  imports: [BrowserModule, FormsModule, ReactiveFormsModule, HttpClientModule],
+  providers: [UsersService, TodosService, PostsService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

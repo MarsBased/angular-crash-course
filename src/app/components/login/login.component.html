@@ -1,0 +1,31 @@
+<form
+  *ngIf="form"
+  novalidate
+  [formGroup]="form"
+  (ngSubmit)="submit()"
+  class="login-form"
+>
+  <div>
+    <label>Email</label>
+    <input type="email" formControlName="email" />
+    <p
+      class="error-msg"
+      *ngIf="form.get('email').dirty && form.get('email').invalid"
+    >
+      You need to add a correct email
+    </p>
+  </div>
+
+  <div>
+    <label>Password</label>
+    <input type="password" formControlName="password" />
+    <p
+      class="error-msg"
+      *ngIf="form.get('password').dirty && form.get('password').invalid"
+    >
+      You need to add a correct password
+    </p>
+  </div>
+
+  <button>Log In</button>
+</form>
