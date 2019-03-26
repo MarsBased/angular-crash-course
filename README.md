@@ -54,6 +54,10 @@ Create a new AddTodo Component that contains:
 
 - Create a new pipe to sort the list of todos
 
+### 8-services
+
+- Create a new service to retrieve todo list
+
 ### Brought you by
 
 [![marsbased](https://marsbased.com/assets/marsbased-readme.svg)](https://marsbased.com)

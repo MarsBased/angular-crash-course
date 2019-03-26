@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UsersService } from './services/users.service';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   inputValue = 'Initial value';
+  username: string;
+
+  constructor(private usersService: UsersService) {
+    this.username = this.usersService.getCurrentUser();
+  }
 
   onEditInput(newInputValue: string): void {
     this.inputValue = newInputValue;

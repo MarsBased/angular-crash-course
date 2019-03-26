@@ -1,6 +1,6 @@
 <div class="todo-list">
   <app-add-todo (addTodo)="onAddTodo($event)"></app-add-todo>
-  <div class="todos" *ngFor="let todo of todoList">
+  <div class="todos" *ngFor="let todo of todoList | appSort">
     <app-todo
       [data]="todo"
       (removeTodo)="onRemoveTodo(todo)"

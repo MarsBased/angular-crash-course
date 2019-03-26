@@ -10,6 +10,8 @@ import { TodoListComponent } from './components/todo-list/todo-list.component';
 import { ColorDirective } from './directives/color.directive';
 import { ClickDirective } from './directives/alert.directive';
 import { CustomDateFormatPipe } from './pipes/date.pipe';
+import { SortPipe } from './pipes/sort.pipe';
+import { UsersService } from './services/users.service';
 
 @NgModule({
   declarations: [
@@ -25,10 +27,11 @@ import { CustomDateFormatPipe } from './pipes/date.pipe';
     ClickDirective,
 
     // Pipes
-    CustomDateFormatPipe
+    CustomDateFormatPipe,
+    SortPipe
   ],
   imports: [BrowserModule, FormsModule],
-  providers: [],
+  providers: [UsersService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
