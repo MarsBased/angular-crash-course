@@ -13,9 +13,4 @@ export class HeaderComponent {
     this.today = new Date();
     this.subtitle = 'Todo List';
   }
-
-  get formattedDate(): string {
-    return `${this.today.getDate()}/${this.today.getMonth() +
-      1}/${this.today.getFullYear()}`;
-  }
 }

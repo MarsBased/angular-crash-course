@@ -5,9 +5,15 @@ import { Component } from '@angular/core';
   templateUrl: 'todo-list.component.html'
 })
 export class TodoListComponent {
-  todo = '';
+  todoList: string[] = [];
 
   onAddTodo(newTodo: string): void {
-    this.todo = newTodo;
+    this.todoList.push(newTodo);
+  }
+
+  onRemoveTodo(todo: string): void {
+    const index = this.todoList.indexOf(todo);
+
+    this.todoList.splice(index, 1);
   }
 }

@@ -9,6 +9,7 @@ import { AddTodoComponent } from './components/add-todo/add-todo.component';
 import { TodoListComponent } from './components/todo-list/todo-list.component';
 import { ColorDirective } from './directives/color.directive';
 import { ClickDirective } from './directives/alert.directive';
+import { CustomDateFormatPipe } from './pipes/date.pipe';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,10 @@ import { ClickDirective } from './directives/alert.directive';
 
     // Directives
     ColorDirective,
-    ClickDirective
+    ClickDirective,
+
+    // Pipes
+    CustomDateFormatPipe
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],

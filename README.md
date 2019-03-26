@@ -13,6 +13,7 @@ Each branch introduce you to a different topic.
 - `4-modules-components`. Input and Output
 - `5-directives`. Directives
 - `6-directives`. Directives
+- `7-pipes`. Pipes
 
 ### 1-angular-cli - Angular CLI
 
@@ -48,6 +49,10 @@ Create a new AddTodo Component that contains:
 - Add a new todoList variable inside TodoList component. An array of string.
 - When adding a new Todo, add it to the array.
 - Iterate over the array and show each element.
+
+### 7-pipes
+
+- Create a new pipe to sort the list of todos
 
 ### Brought you by
 
