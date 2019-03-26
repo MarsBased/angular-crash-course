@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TodosService } from '../../services/todos.service';
 
 @Component({
   selector: 'app-todo-list',
@@ -6,6 +7,10 @@ import { Component } from '@angular/core';
 })
 export class TodoListComponent {
   todoList: string[] = [];
+
+  constructor(private todosService: TodosService) {
+    this.todoList = this.todosService.getTodos();
+  }
 
   onAddTodo(newTodo: string): void {
     this.todoList.push(newTodo);

@@ -14,6 +14,8 @@ Each branch introduce you to a different topic.
 - `5-directives`. Directives
 - `6-directives`. Directives
 - `7-pipes`. Pipes
+- `8-services`. Services
+- `9-http`. HTTP
 
 ### 1-angular-cli - Angular CLI
 
@@ -57,6 +59,13 @@ Create a new AddTodo Component that contains:
 ### 8-services
 
 - Create a new service to retrieve todo list
+
+### 9-http
+
+- Create a new postList component
+- Create a new posts service
+- Inject HTTP Service
+- Retrieve the list of posts from jsonplaceholder.typicode.com
 
 ### Brought you by
 

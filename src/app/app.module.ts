@@ -12,6 +12,7 @@ import { ClickDirective } from './directives/alert.directive';
 import { CustomDateFormatPipe } from './pipes/date.pipe';
 import { SortPipe } from './pipes/sort.pipe';
 import { UsersService } from './services/users.service';
+import { TodosService } from './services/todos.service';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,7 @@ import { UsersService } from './services/users.service';
     SortPipe
   ],
   imports: [BrowserModule, FormsModule],
-  providers: [UsersService],
+  providers: [UsersService, TodosService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
