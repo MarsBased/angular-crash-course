@@ -8,15 +8,20 @@ import { TodoComponent } from './components/todo/todo.component';
 import { AddTodoComponent } from './components/add-todo/add-todo.component';
 import { TodoListComponent } from './components/todo-list/todo-list.component';
 import { ColorDirective } from './directives/color.directive';
+import { ClickDirective } from './directives/alert.directive';
 
 @NgModule({
   declarations: [
+    // Components
     AppComponent,
     HeaderComponent,
     TodoComponent,
     AddTodoComponent,
     TodoListComponent,
-    ColorDirective
+
+    // Directives
+    ColorDirective,
+    ClickDirective
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
