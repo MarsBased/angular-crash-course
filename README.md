@@ -71,6 +71,12 @@ Create a new AddTodo Component that contains:
 
 - Create a new Signup component with form
 
+### 11-routing
+
+- Signup route
+- Posts route
+- Todos route
+
 ### Brought you by
 
 [![marsbased](https://marsbased.com/assets/marsbased-readme.svg)](https://marsbased.com)

@@ -17,6 +17,8 @@ import { LoginComponent } from './components/login/login.component';
 import { PostsService } from './services/posts.service';
 import { PostListComponent } from './components/post-list/post-list.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SignupComponent } from './components/signup/signup.component';
+import { RoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,7 @@ import { HttpClientModule } from '@angular/common/http';
     AddTodoComponent,
     TodoListComponent,
     LoginComponent,
+    SignupComponent,
     PostListComponent,
 
     // Directives
@@ -37,7 +40,13 @@ import { HttpClientModule } from '@angular/common/http';
     CustomDateFormatPipe,
     SortPipe
   ],
-  imports: [BrowserModule, FormsModule, ReactiveFormsModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    RoutingModule
+  ],
   providers: [UsersService, TodosService, PostsService],
   bootstrap: [AppComponent]
 })

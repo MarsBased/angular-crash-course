@@ -1,12 +1,22 @@
-<h2>Login</h2>
+<h2>Signup</h2>
 
 <form
   *ngIf="form"
   novalidate
   [formGroup]="form"
   (ngSubmit)="submit()"
-  class="login-form"
+  class="signup-form"
 >
+  <div>
+    <label>Name</label>
+    <input type="text" formControlName="name" />
+    <p
+      class="error-msg"
+      *ngIf="form.get('name').dirty && form.get('name').invalid"
+    >
+      You need to add a correct name
+    </p>
+  </div>
   <div>
     <label>Email</label>
     <input type="email" formControlName="email" />
